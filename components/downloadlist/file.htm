@@ -1,0 +1,11 @@
+{% set icon = 'fa-file-text-o' %}
+{% if file.content_type in ['application/vnd.ms-excel'] %}
+    {% set icon = 'fa-file-excel-o' %}
+{% endif %}
+{% if file.content_type in ['application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'text/rtf', 'application/msword'] %}
+    {% set icon = 'fa-file-word-o' %}
+{% endif %}
+{% if file.content_type == 'application/pdf' %}
+    {% set icon = 'fa-file-pdf-o' %}
+{% endif %}
+<a href="{{ file.path|app }}" alt="{{ file.description }}" title="{{ file.description }}" class="m-r"><i class="fa {{ icon }} fa-2x"></i></a>

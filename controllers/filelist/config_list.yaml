@@ -1,0 +1,40 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+# Model List Column configuration
+list: @/plugins/whsol/dlist/models/filelist/columns.yaml
+
+# Model Class name
+modelClass: WhSol\DList\Models\FileList
+
+# List Title
+title: whsol.dlist::lang.filelist.pageTitle
+
+# Link URL for each record
+recordUrl: whsol/dlist/filelist/update/:id
+
+# Message to display if the list is empty
+noRecordsMessage: backend::lang.list.no_records
+
+# Records to display per page
+recordsPerPage: 12
+
+defaultSort:
+  column: title
+  direction: asc
+
+# Display checkboxes next to each record
+# showCheckboxes: true
+
+# Toolbar widget configuration
+toolbar:
+    # Partial for toolbar buttons
+    buttons: list_toolbar
+
+    # Search widget configuration
+    search:
+        prompt: backend::lang.list.search_prompt
+
+
+

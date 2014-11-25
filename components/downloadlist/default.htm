@@ -1,0 +1,18 @@
+{% for download_item in dlist %}
+    <table class="table">
+        <tbody>
+            <tr>
+                <td><p class="text-left">{{ download_item.title }}</p></td>
+                <td>
+                    {% if download_item.download_files.count %}
+                        <p class="text-right n-w">
+                            {% for file in download_item.download_files %}
+                                {% partial 'downloadList::file' file=file %}
+                            {% endfor %}
+                        </p>
+                    {% endif %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{% endfor %}

@@ -1,0 +1,12 @@
+.icon-file-pdf-o:before {
+    content: "\f1c1";
+}
+.icon-file-word-o:before {
+    content: "\f1c2";
+}
+.icon-file-excel-o:before {
+    content: "\f1c3";
+}
+.icon-file-text-o:before {
+    content: "\f0f6";
+}

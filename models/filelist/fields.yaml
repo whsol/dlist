@@ -1,0 +1,31 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+  title:
+      label: whsol.dlist::lang.filelist.title
+      span: left
+      placeholder: New file title
+
+  toolbar:
+    type: partial
+    path: post_toolbar
+    cssClass: collapse-visible
+
+secondaryTabs:
+  stretch: true
+  fields:
+    published:
+      tab: Files
+      label: whsol.dlist::lang.filelist.published
+      type: switch
+      margin: 15
+
+    download_files:
+      tab: Files
+      label: Download File
+      type: fileupload
+      mode: file
+      margin: 15

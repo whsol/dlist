@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: whsol.dlist::lang.filelist.label
+form: @/plugins/whsol/dlist/models/filelist/fields.yaml
+modelClass: WhSol\Dlist\Models\FileList
+defaultRedirect: whsol/dlist/filelist
+
+create:
+    redirect: whsol/dlist/filelist/update/:id
+    redirectClose: whsol/dlist/filelist
+
+update:
+    redirect: whsol/dlist/filelist
+    redirectClose: whsol/dlist/filelist

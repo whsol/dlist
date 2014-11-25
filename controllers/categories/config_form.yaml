@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Category
+form: @/plugins/whsol/dlist/models/category/fields.yaml
+modelClass: WhSol\DList\Models\Category
+defaultRedirect: whsol/dlist/categories
+
+create:
+    redirect: whsol/dlist/categories/update/:id
+    redirectClose: whsol/dlist/categories
+
+update:
+    redirect: whsol/dlist/categories
+    redirectClose: whsol/dlist/categories

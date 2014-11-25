@@ -1,0 +1,12 @@
+<?php if (!$this->fatalError): ?>
+
+    <?= Form::open(['class'=>'layout-item stretch layout-column']) ?>
+        <?= $this->formRender() ?>
+    <?= Form::close() ?>
+
+<?php else: ?>
+    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+<?php endif ?>
+<a href="<?= Backend::url('whsol/dlist/filelist') ?>" class="btn btn-default">
+    <?= e(trans('whsol.dlist::lang.filelist.return')) ?>
+</a>

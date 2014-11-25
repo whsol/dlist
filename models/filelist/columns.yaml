@@ -1,0 +1,15 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+  title:
+    label: whsol.dlist::lang.filelist.title
+    sortable: True
+
+  published:
+    lable: whsol.dlist::lang.filelist.published
+
+  updated_at:
+    type: date
